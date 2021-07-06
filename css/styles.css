@@ -1,0 +1,258 @@
+/* цвет фона белый FFFFFF */
+/* основной цвет серый 757575 */
+/* втооричный цвет текста  212121 */
+/* 000000 2196F3 FFFFFF цвета логотипа  */
+/* вторичный цвет фона #2F303A
+ */
+
+:root {
+  --primary-text-colour: #757575;
+  --secondary-text-colour: #212121;
+  --accent-blue-colour: #2196f3;
+  --white-colour: #ffffff;
+  --black-colour: #000000;
+  --secondary-bg-colour: #2f303a;
+  --background-our-team-section: #f5f4fa;
+}
+
+.pointer,
+.button {
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+}
+
+body {
+  background-color: var(--white-colour);
+  color: var(--primary-text-colour);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+/* STUDIA  */
+
+/* header */
+
+.logo {
+  color: var(--accent-blue-colour);
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.accent-head {
+  color: var(--black-colour);
+}
+
+.site-nav .link {
+  color: var(--secondary-text-colour);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-blue-colour);
+}
+
+.kontakt-nav .link {
+  color: var(--primary-text-colour);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.kontakt-nav .link:hover,
+.kontakt-nav .link:focus {
+  color: var(--accent-blue-colour);
+}
+
+/* Hero */
+
+.hero-title {
+  color: var(--white-colour);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero {
+  background-color: var(--secondary-bg-colour);
+}
+/* button */
+
+.button {
+  color: var(--white-colour);
+  background-color: var(--accent-blue-colour);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  /* identical to box height, or 187% */
+
+  /* display: flex;
+  align-items: center;
+  text-align: center; */
+}
+
+/* Стиль для заголовков секций */
+
+/* .section-tittle {
+  color: var();
+}
+ */
+
+/* Featuers */
+
+.features-list-title {
+  color: var(--secondary-text-colour);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features-list .text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* wha we can */
+
+.what-we-can-title {
+  color: var(--secondary-text-colour);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* our team */
+
+.our-team {
+  background-color: var(--background-our-team-section);
+}
+
+.our-team-title {
+  color: var(--secondary-text-colour);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.our-team .title {
+  color: var(--secondary-text-colour);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.our-team .text {
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--secondary-bg-colour);
+}
+
+.address {
+  color: var(--white-colour);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.address-info {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.address-info:hover,
+.address-info:focus {
+  color: var(--accent-blue-colour);
+}
+
+.accent-footer {
+  color: var(--white-colour);
+}
+
+/* portfolio.html */
+
+/* menu-nav list */
+
+.button.menu {
+  color: var(--secondary-text-colour);
+  background-color: var(--background-our-team-section);
+  /* cursor: pointer; */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+}
+
+.button.menu:hover,
+.button.menu:focus {
+  color: var(--white-colour);
+  background-color: var(--accent-blue-colour);
+}
+
+.examples-list.title {
+  color: var(--secondary-text-colour);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.examples .text {
+  color: var(--primary-text-colour);
+
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+/* подцветка активной страницы */
+
+.site-nav .active {
+  color: var(--accent-blue-colour);
+}

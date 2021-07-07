@@ -39,7 +39,7 @@ ul {
 
 /* подцветка активной страницы */
 
-.site-nav .active {
+.site-nav .link.active {
   color: var(--accent-blue-colour);
 }
 

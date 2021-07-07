@@ -9,8 +9,8 @@
   --primary-text-colour: #757575;
   --secondary-text-colour: #212121;
   --accent-blue-colour: #2196f3;
-  --white-colour: #ffffff;
-  --black-colour: #000000;
+  --bg-colour: #ffffff;
+  --logo-accent-colour: #000000;
   --secondary-bg-colour: #2f303a;
   --background-our-team-section: #f5f4fa;
 }
@@ -26,10 +26,18 @@
 
 body {
   background-color: var(--white-colour);
-  color: var(--primary-text-colour);
+  color: var(--bg-colour);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+  outline: 2px solid tomato;
+}
+
 /* STUDIA  */
 
 /* header */
@@ -46,7 +54,12 @@ body {
 }
 
 .accent-head {
-  color: var(--black-colour);
+  color: var(--logo-accent-colour);
+}
+
+.site-nav {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .site-nav .link {
@@ -62,6 +75,11 @@ body {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-blue-colour);
+}
+
+.kontakt-nav {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .kontakt-nav .link {
@@ -82,7 +100,10 @@ body {
 /* Hero */
 
 .hero-title {
-  color: var(--white-colour);
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: var(--bg-colour);
 
   font-weight: 900;
   font-size: 44px;
@@ -98,18 +119,27 @@ body {
 /* button */
 
 .button {
-  color: var(--white-colour);
+  display: inline-block;
+  border-radius: 4px;
+  padding: 11px 34px;
+  min-width: 136px;
+  border: none;
+
+  /*  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15) */
+
+  color: var(--bg-colour);
   background-color: var(--accent-blue-colour);
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  /* identical to box height, or 187% */
+  text-align: center;
 
-  /* display: flex;
+  /* ;
+   display: flex;
   align-items: center;
-  text-align: center; */
+   */
 }
 
 /* Стиль для заголовков секций */
@@ -188,7 +218,7 @@ body {
 }
 
 .address {
-  color: var(--white-colour);
+  color: var(--bg-colour);
 
   font-style: normal;
   font-size: 14px;
@@ -211,7 +241,7 @@ body {
 }
 
 .accent-footer {
-  color: var(--white-colour);
+  color: var(--bg-colour);
 }
 
 /* portfolio.html */

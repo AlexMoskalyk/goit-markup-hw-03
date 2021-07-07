@@ -1,3 +1,20 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* цвет фона белый FFFFFF */
 /* основной цвет серый 757575 */
 /* втооричный цвет текста  212121 */
@@ -20,37 +37,39 @@
   cursor: pointer;
 }
 
-.list {
+/* .list {
   list-style: none;
-}
+} */
 
 body {
-  background-color: var(--white-colour);
-  color: var(--bg-colour);
+  background-color: var(--bg-colour);
+  color: var(--primary-text-colour);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1170px;
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   outline: 2px solid tomato;
 }
 
-/* STUDIA  */
+/* ----------------------------------------------------------STUDIA-------------------------------------------------------------------  */
 
-/* header */
+/*------------------------------------------------------------ header----------------------------------------------------------------- */
 
 .logo {
   color: var(--accent-blue-colour);
-
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+
+  display: inline-block;
 }
 
 .accent-head {
@@ -58,18 +77,18 @@ body {
 }
 
 .site-nav {
-  margin-top: 0;
-  margin-bottom: 0;
+  display: flex;
 }
 
 .site-nav .link {
   color: var(--secondary-text-colour);
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  margin: 0 auto;
 }
 
 .site-nav .link:hover,
@@ -78,13 +97,15 @@ body {
 }
 
 .kontakt-nav {
-  margin-top: 0;
-  margin-bottom: 0;
+  display: flex;
+}
+
+.kontakt-nav.item {
+  margin-left: auto;
 }
 
 .kontakt-nav .link {
   color: var(--primary-text-colour);
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -97,7 +118,7 @@ body {
   color: var(--accent-blue-colour);
 }
 
-/* Hero */
+/*------------------------------------------------------------ hero----------------------------------------------------------------- */
 
 .hero-title {
   margin-top: 0;

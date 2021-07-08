@@ -83,9 +83,10 @@ body {
 /* ----------------------------------------------------------STUDIA-------------------------------------------------------------------  */
 
 /*------------------------------------------------------------ header----------------------------------------------------------------- */
-.header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+.section.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border: 1px solid #ececec;
 }
 .header-box {
   display: flex;
@@ -196,9 +197,9 @@ body {
 
 /*------------------------------------------------------------ feature----------------------------------------------------------------- */
 
-.features {
+.section.features {
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 0px;
 }
 
 .features.list {
@@ -420,19 +421,19 @@ body {
   flex-wrap: wrap;
 }
 
-.examples .item {
+/* .examples .item {
   margin-right: 30px;
   margin-bottom: 30px;
-  /*  border: 1px solid #eeeeee; */ /* не поимаю почему ломаеться когда подключаю */
-}
+} */
+/*  border: 1px solid #eeeeee; */ /* не поимаю почему ломаеться когда подключаю */
 
-.examples .item:nth-child(3n) {
+/* .examples .item:nth-child(3n) {
   margin-right: 0;
-}
+} */
 
-.examples .item:nth-last-child(-n + 3) {
+/* .examples .item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
-}
+} */
 
 .examples-list.title {
   color: var(--secondary-text-colour);
